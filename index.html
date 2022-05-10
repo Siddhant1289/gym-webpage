@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">   
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset  */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            font-family: 'Merienda', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            /* padding-bottom: 10px; */
+            /* border: 2px solid rgb(134, 27, 134); */
+        }
+
+        .left img {
+            width: 130px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+            border: 10px groove rgb(206, 159, 159);
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            /* border: 2px solid hotpink; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: plum;
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0px 10px;
+            background-color: black;
+            color: white;
+            border: 2px groove gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Merienda', cursive;
+        }
+
+        .btn:hover {
+            background: rgb(41, 39, 39);
+        }
+
+        .container {
+            border: 5px groove white;
+            margin: 100px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 25px;
+        }
+
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 350px;
+            border: 3px groove rgb(230, 173, 173);
+            border-radius: 10px;
+            margin: 10px auto;
+            font-size: 20px;
+            font-family: 'Merienda', cursive;
+        }
+
+        .container h1{
+            text-align: center;
+        }
+
+        .container button{
+            display: block;
+            width: 23%;
+            margin: 20px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/Logo.jpg" alt="">
+            <div>Fit Gym</div>
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About_Us</a></li>
+                <li><a href="#">Fitness_Calc</a></li>
+                <li><a href="#">Contact_Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <a href="http://link2dial.com/9557979666"><button class="btn">Call Us Now</button></a>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Agra</h1>
+        <form action="noaction.py">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
